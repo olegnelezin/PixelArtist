@@ -1,0 +1,52 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="@string/general_settings" >
+
+        <ListPreference
+            android:icon="@drawable/ic_baseline_language_24"
+            app:defaultValue="Русский"
+            app:entries="@array/lang"
+            app:entryValues="@array/lang"
+            app:key="language"
+            android:title="@string/language"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            android:icon="@drawable/ic_baseline_text_fields_24"
+            app:defaultValue="Средний"
+            app:entries="@array/size"
+            app:entryValues="@array/size"
+            app:key="text_size"
+            android:title="@string/text_size"
+            app:useSimpleSummaryProvider="true" />
+
+
+        <ListPreference
+            android:icon="@drawable/ic_baseline_crop_din_24"
+            app:defaultValue="Средний"
+            app:entries="@array/size"
+            app:entryValues="@array/size"
+            app:key="button_size"
+            android:title="@string/pixel_size"
+            app:useSimpleSummaryProvider="true"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/appearance">
+
+        <SwitchPreference
+            android:key="switch_bar"
+            android:title="@string/bar"
+            app:defaultValue="false"
+            />
+
+    </PreferenceCategory>
+
+
+
+
+</PreferenceScreen>

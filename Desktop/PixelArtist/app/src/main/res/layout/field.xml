@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.example.greatexitproject.scrolling.MultiScrollView
+        android:id="@+id/scrollY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_weight="1"
+        >
+
+        <com.example.greatexitproject.scrolling.HorizontalSrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:id="@+id/scrollX"
+            >
+
+            <GridLayout
+                android:id="@+id/fieldLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/silver_grey"
+
+                />
+
+        </com.example.greatexitproject.scrolling.HorizontalSrollView>
+    </com.example.greatexitproject.scrolling.MultiScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/main_color_button"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+            android:background="@color/white"
+            app:srcCompat="@drawable/choose_color_icon" />
+
+
+        <ImageButton
+            android:id="@+id/background_color_button"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+            android:adjustViewBounds="false"
+            android:background="@color/white"
+            android:cropToPadding="false"
+            app:srcCompat="@drawable/choose_background_icon" />
+
+
+        <ImageButton
+            android:id="@+id/settings_button"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+            android:background="@color/white"
+            app:srcCompat="@drawable/settings_icon" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/main_color"
+            android:paddingRight="3dp"
+            android:id="@+id/main_color_text"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.1"
+            android:id="@+id/background_color_text"
+            android:gravity="center_horizontal"
+            android:text="@string/background_color"
+            android:paddingLeft="2dp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:id="@+id/settings_text"
+            android:text="@string/to_settings"
+            android:paddingLeft="8dp"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

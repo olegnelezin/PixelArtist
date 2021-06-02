@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Pixel Artist</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="to_settings">Настройки</string>
+    <string name="main_color">Основной цвет</string>
+    <string name="background_color">Заливка</string>
+    <string name="text_size">Размер текста</string>
+    <string name="pixel_size">Размер пикселей</string>
+    <string name="input_size">Введите размер поля</string>
+    <string name="width">Ширина</string>
+    <string name="height">Высота</string>
+    <string name="start">Начать</string>
+    <string name="general_settings">Общее</string>
+    <string name="language">Язык</string>
+    <string name="appearance">Внешний вид</string>
+    <string name="bar">Показывать верхнюю панель</string>
+
+
+    
+</resources>

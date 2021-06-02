@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_for_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/input_size"
+        android:textSize="23sp" />
+
+    <EditText
+        android:id="@+id/edit_width"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/roboto_medium"
+        android:hint="@string/width"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edit_height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/roboto_medium"
+        android:hint="@string/height"
+        android:inputType="number"
+        />
+
+    <Button
+        android:layout_width="175dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/start_button"
+        android:fontFamily="@font/roboto_medium"
+        android:letterSpacing="0.1"
+        android:onClick="setSize"
+        android:id="@+id/start_button"
+        android:text="@string/start"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/main" />
+
+</LinearLayout>
